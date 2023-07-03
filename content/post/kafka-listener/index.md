@@ -405,8 +405,8 @@ services:
       - KAFKA_CFG_SASL_ENABLED_MECHANISMS=PLAIN
       - KAFKA_CFG_SASL_MECHANISM_INTER_BROKER_PROTOCOL=PLAIN
       - KAFKA_CFG_SASL_MECHANISM_CONTROLLER_PROTOCOL=PLAIN
-      - KAFKA_CFG_LISTENER_NAME_EXTERNAL_PLAIN_SASL_JAAS_CONFIG=org.apache.kafka.common.security.plain.PlainLoginModule required username="admin" password="AHdlkfk@2023" user_admin="AHdlkfk@2023";
-      - KAFKA_CFG_LISTENER_NAME_CONTROLLER_PLAIN_SASL_JAAS_CONFIG=org.apache.kafka.common.security.plain.PlainLoginModule required username="admin" password="AHdlkfk@2023" user_admin="AHdlkfk@2023";
+      - KAFKA_CFG_LISTENER_NAME_EXTERNAL_PLAIN_SASL_JAAS_CONFIG=org.apache.kafka.common.security.plain.PlainLoginModule required username="admin" password="2023" user_admin="2023";
+      - KAFKA_CFG_LISTENER_NAME_CONTROLLER_PLAIN_SASL_JAAS_CONFIG=org.apache.kafka.common.security.plain.PlainLoginModule required username="admin" password="2023" user_admin="2023";
       
   kafkasetup:
     image: docker.io/bitnami/kafka:3.4.1
@@ -462,6 +462,6 @@ spring:
       sasl:
         mechanism: PLAIN
         jaas:
-          config: 'org.apache.kafka.common.security.plain.PlainLoginModule required username="admin" password="AHdlkfk@2023";'
+          config: 'org.apache.kafka.common.security.plain.PlainLoginModule required username="admin" password="2023";'
 ```
 
