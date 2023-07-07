@@ -2,8 +2,8 @@
   "accentColor": "",
   "theme": "moonstone",
   "interfaceFontFamily": "微软雅黑",
-  "textFontFamily": "微软雅黑",
+  "textFontFamily": "思源宋体",
   "monospaceFontFamily": "DejaVu Sans Mono",
-  "baseFontSize": 16,
+  "baseFontSize": 19,
   "nativeMenus": false
 }

@@ -2,5 +2,7 @@
   "newFileLocation": "current",
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
-  "attachmentFolderPath": "./assets"
+  "attachmentFolderPath": "./assets",
+  "vimMode": true,
+  "alwaysUpdateLinks": true
 }
