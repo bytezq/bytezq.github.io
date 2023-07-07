@@ -32,3 +32,6 @@ keywords:
 
 这里使用 [PaperMod](https://themes.gohugo.io/themes/hugo-papermod/)，参考官方文档安装。
 配置参考 [PaperMod主题配置](https://shaohanyun.top/posts/env/blog_build2/#%e8%87%aa%e5%ae%9a%e4%b9%89%e5%a4%b4%e9%83%a8)
+
+### 4. 本地文件管理Obsidian使用  
+![](assets/Obsidian-file-setting.png)

@@ -1,0 +1,1 @@
+![](assets/linux-memory-model.png)
