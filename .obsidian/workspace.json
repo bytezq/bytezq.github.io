@@ -6,7 +6,7 @@
       {
         "id": "9895d8c442ae20db",
         "type": "tabs",
-        "dimension": 54.439834024896264,
+        "dimension": 52.282157676348554,
         "children": [
           {
             "id": "b51ca74a3ed9f698",
@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/linux/momory/C语言调用函数栈.md",
+                "file": "content/linux/momory/function-call-stack-in-c.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
       {
         "id": "5e6485d73b95e2c4",
         "type": "tabs",
-        "dimension": 45.560165975103736,
+        "dimension": 47.71784232365145,
         "children": [
           {
             "id": "81f09356b8e06a1c",
@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/linux/momory/C语言调用函数栈.md",
+                "file": "content/linux/momory/function-call-stack-in-c.md",
                 "mode": "preview",
                 "source": true
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/linux/momory/C语言调用函数栈.md",
+                "file": "content/linux/momory/function-call-stack-in-c.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/linux/momory/C语言调用函数栈.md",
+                "file": "content/linux/momory/function-call-stack-in-c.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/linux/momory/C语言调用函数栈.md"
+                "file": "content/linux/momory/function-call-stack-in-c.md"
               }
             }
           },
@@ -178,10 +178,15 @@
   },
   "active": "b51ca74a3ed9f698",
   "lastOpenFiles": [
-    "content/post/kafka-listener/index.md",
+    "content/linux/gcc.md",
+    "content/about.md",
+    "content/linux/momory/function-call-stack-in-c.md",
     "content/post/golang/index.md",
+    "content/post/vim.md",
+    "content/post/grpc/index.md",
+    "archetypes/default.md",
+    "content/post/kafka-listener/index.md",
     "content/post/assets/Obsidian-file-setting.png",
-    "content/linux/momory/C语言调用函数栈.md",
     "content/linux/momory/assets/Pasted image 20230708143930.png",
     "content/linux/momory/assets/Pasted image 20230708143904.png",
     "content/linux/momory/assets/Pasted image 20230708143841.png",
@@ -194,7 +199,6 @@
     "content/linux/momory/虚拟地址空间.md",
     "content/linux/momory/linux内存模型.md",
     "content/linux/momory/函数调用栈.md",
-    "content/post/vim.md",
     "content/post/minimal-c.md"
   ]
 }

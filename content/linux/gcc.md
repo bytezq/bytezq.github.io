@@ -1,5 +1,5 @@
 ---
-title: "Gcc"
+title: "gcc"
 date: 2023-06-26T09:14:49+08:00
 author: ["左丘"]
 
