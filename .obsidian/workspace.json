@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/linux/momory/function-call-stack-in-c.md",
+                "file": "content/linux/function-call-stack-in-c.md",
                 "mode": "source",
                 "source": false
               }
@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/linux/momory/function-call-stack-in-c.md",
+                "file": "content/linux/function-call-stack-in-c.md",
                 "mode": "preview",
                 "source": true
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/linux/momory/function-call-stack-in-c.md",
+                "file": "content/linux/function-call-stack-in-c.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/linux/momory/function-call-stack-in-c.md",
+                "file": "content/linux/function-call-stack-in-c.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/linux/momory/function-call-stack-in-c.md"
+                "file": "content/linux/function-call-stack-in-c.md"
               }
             }
           },
@@ -179,25 +179,25 @@
   "active": "b51ca74a3ed9f698",
   "lastOpenFiles": [
     "content/linux/gcc.md",
+    "content/linux/function-call-stack-in-c.md",
     "content/about.md",
-    "content/linux/momory/function-call-stack-in-c.md",
     "content/post/golang/index.md",
     "content/post/vim.md",
     "content/post/grpc/index.md",
     "archetypes/default.md",
     "content/post/kafka-listener/index.md",
     "content/post/assets/Obsidian-file-setting.png",
-    "content/linux/momory/assets/Pasted image 20230708143930.png",
-    "content/linux/momory/assets/Pasted image 20230708143904.png",
-    "content/linux/momory/assets/Pasted image 20230708143841.png",
-    "content/linux/momory/assets/Pasted image 20230708143736.png",
-    "content/linux/momory/assets/Pasted image 20230708143725.png",
-    "content/linux/momory/assets/Pasted image 20230708143207.png",
-    "content/linux/momory/assets/stack-in-out-flowable.png",
-    "content/linux/momory/assets/stack-frame-2.png",
-    "content/linux/momory/assets/stack-frame-output.png",
-    "content/linux/momory/虚拟地址空间.md",
-    "content/linux/momory/linux内存模型.md",
+    "content/linux/assets/Pasted image 20230708143930.png",
+    "content/linux/assets/Pasted image 20230708143904.png",
+    "content/linux/assets/Pasted image 20230708143841.png",
+    "content/linux/assets/Pasted image 20230708143736.png",
+    "content/linux/assets/Pasted image 20230708143725.png",
+    "content/linux/assets/Pasted image 20230708143207.png",
+    "content/linux/assets/stack-in-out-flowable.png",
+    "content/linux/assets/stack-frame-2.png",
+    "content/linux/assets/stack-frame-output.png",
+    "content/linux/虚拟地址空间.md",
+    "content/linux/linux内存模型.md",
     "content/linux/momory/函数调用栈.md",
     "content/post/minimal-c.md"
   ]
