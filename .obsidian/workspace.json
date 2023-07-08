@@ -6,7 +6,7 @@
       {
         "id": "9895d8c442ae20db",
         "type": "tabs",
-        "dimension": 52.191235059760956,
+        "dimension": 54.439834024896264,
         "children": [
           {
             "id": "b51ca74a3ed9f698",
@@ -16,7 +16,7 @@
               "state": {
                 "file": "content/linux/momory/C语言调用函数栈.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -25,7 +25,7 @@
       {
         "id": "5e6485d73b95e2c4",
         "type": "tabs",
-        "dimension": 47.808764940239044,
+        "dimension": 45.560165975103736,
         "children": [
           {
             "id": "81f09356b8e06a1c",
@@ -89,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "5f6d181a0c3889b7",
@@ -149,8 +148,17 @@
                 "file": "content/linux/momory/C语言调用函数栈.md"
               }
             }
+          },
+          {
+            "id": "8c842a0b5149abb6",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -164,14 +172,26 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
   "active": "b51ca74a3ed9f698",
   "lastOpenFiles": [
-    "content/linux/momory/assets/function-stack.png",
-    "content/linux/momory/虚拟地址空间.md",
+    "content/post/kafka-listener/index.md",
+    "content/post/golang/index.md",
+    "content/post/assets/Obsidian-file-setting.png",
     "content/linux/momory/C语言调用函数栈.md",
+    "content/linux/momory/assets/Pasted image 20230708143930.png",
+    "content/linux/momory/assets/Pasted image 20230708143904.png",
+    "content/linux/momory/assets/Pasted image 20230708143841.png",
+    "content/linux/momory/assets/Pasted image 20230708143736.png",
+    "content/linux/momory/assets/Pasted image 20230708143725.png",
+    "content/linux/momory/assets/Pasted image 20230708143207.png",
+    "content/linux/momory/assets/stack-in-out-flowable.png",
+    "content/linux/momory/assets/stack-frame-2.png",
+    "content/linux/momory/assets/stack-frame-output.png",
+    "content/linux/momory/虚拟地址空间.md",
     "content/linux/momory/linux内存模型.md",
     "content/linux/momory/函数调用栈.md",
     "content/post/vim.md",
