@@ -178,14 +178,17 @@
   },
   "active": "b51ca74a3ed9f698",
   "lastOpenFiles": [
-    "content/linux/gcc.md",
-    "content/linux/function-call-stack-in-c.md",
-    "content/about.md",
-    "content/post/golang/index.md",
-    "content/post/vim.md",
-    "content/post/grpc/index.md",
-    "archetypes/default.md",
     "content/post/kafka-listener/index.md",
+    "content/linux/function-call-stack-in-c.md",
+    "content/post/hello.md",
+    "content/linux/gcc.md",
+    "content/post/golang/index.md",
+    "content/post/grpc/index.md",
+    "content/post/minimal-c.md",
+    "content/linux/linux内存模型.md",
+    "content/about.md",
+    "content/post/vim.md",
+    "archetypes/default.md",
     "content/post/assets/Obsidian-file-setting.png",
     "content/linux/assets/Pasted image 20230708143930.png",
     "content/linux/assets/Pasted image 20230708143904.png",
@@ -197,8 +200,6 @@
     "content/linux/assets/stack-frame-2.png",
     "content/linux/assets/stack-frame-output.png",
     "content/linux/虚拟地址空间.md",
-    "content/linux/linux内存模型.md",
-    "content/linux/momory/函数调用栈.md",
-    "content/post/minimal-c.md"
+    "content/linux/momory/函数调用栈.md"
   ]
 }
