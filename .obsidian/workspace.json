@@ -4,38 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "9895d8c442ae20db",
+        "id": "70c68a604e1a6978",
         "type": "tabs",
-        "dimension": 52.282157676348554,
         "children": [
           {
-            "id": "b51ca74a3ed9f698",
+            "id": "9d3f130433aef828",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/linux/function-call-stack-in-c.md",
+                "file": "content/av/rtp protocol.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "5e6485d73b95e2c4",
-        "type": "tabs",
-        "dimension": 47.71784232365145,
-        "children": [
-          {
-            "id": "81f09356b8e06a1c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/linux/function-call-stack-in-c.md",
-                "mode": "preview",
-                "source": true
               }
             }
           }
@@ -105,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/linux/function-call-stack-in-c.md",
+                "file": "content/av/rtp protocol.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/linux/function-call-stack-in-c.md",
+                "file": "content/av/rtp protocol.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/linux/function-call-stack-in-c.md"
+                "file": "content/av/rtp protocol.md"
               }
             }
           },
@@ -176,20 +156,27 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "b51ca74a3ed9f698",
+  "active": "9d3f130433aef828",
   "lastOpenFiles": [
-    "content/post/kafka-listener/index.md",
-    "content/linux/function-call-stack-in-c.md",
-    "content/post/hello.md",
-    "content/linux/gcc.md",
+    "content/av/mrcp.md",
+    "content/av/rtp protocol.md",
+    "content/av/assets/Pasted image 20230722223411.png",
+    "content/av/assets",
+    "content/linux/IO模型.md",
+    "content/av",
+    "content/linux/虚拟地址映射.md",
     "content/post/golang/index.md",
-    "content/post/grpc/index.md",
-    "content/post/minimal-c.md",
-    "content/linux/linux内存模型.md",
     "content/about.md",
     "content/post/vim.md",
-    "archetypes/default.md",
+    "content/post/minimal-c.md",
+    "content/post/hello.md",
     "content/post/assets/Obsidian-file-setting.png",
+    "content/post/kafka-listener/index.md",
+    "content/linux/function-call-stack-in-c.md",
+    "content/linux/gcc.md",
+    "content/post/grpc/index.md",
+    "content/linux/linux内存模型.md",
+    "archetypes/default.md",
     "content/linux/assets/Pasted image 20230708143930.png",
     "content/linux/assets/Pasted image 20230708143904.png",
     "content/linux/assets/Pasted image 20230708143841.png",
@@ -198,8 +185,6 @@
     "content/linux/assets/Pasted image 20230708143207.png",
     "content/linux/assets/stack-in-out-flowable.png",
     "content/linux/assets/stack-frame-2.png",
-    "content/linux/assets/stack-frame-output.png",
-    "content/linux/虚拟地址空间.md",
     "content/linux/momory/函数调用栈.md"
   ]
 }

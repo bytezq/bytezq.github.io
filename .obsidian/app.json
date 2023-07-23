@@ -3,6 +3,6 @@
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
   "attachmentFolderPath": "./assets",
-  "vimMode": true,
+  "vimMode": false,
   "alwaysUpdateLinks": true
 }
