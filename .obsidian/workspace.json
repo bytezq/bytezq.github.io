@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/av/rtp protocol.md",
+                "file": "content/post/freeswitch/1 install.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "5f6d181a0c3889b7",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/av/rtp protocol.md",
+                "file": "content/post/freeswitch/1 install.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/av/rtp protocol.md",
+                "file": "content/post/freeswitch/1 install.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/av/rtp protocol.md"
+                "file": "content/post/freeswitch/1 install.md"
               }
             }
           },
@@ -158,21 +159,34 @@
   },
   "active": "9d3f130433aef828",
   "lastOpenFiles": [
+    "content/post/kafka/listener.md",
+    "content/post/freeswitch/1 install.md",
+    "content/post/freeswitch",
+    "content/post/freeswitch安装教程.md",
+    "content/post/kafka/log.md",
+    "content/math/梯度算法的通俗理解.md",
+    "content/math/微积分.md",
+    "content/math/概率论.md",
+    "content/math/线性代数.md",
     "content/av/mrcp.md",
+    "content/math",
+    "content/未命名.md",
     "content/av/rtp protocol.md",
+    "content/deep-learning/intro.md",
+    "content/about.md",
+    "content/deep-learning",
+    "content/post/minimal-c.md",
+    "content/post/hello.md",
+    "content/post/vim.md",
+    "content/linux/function-call-stack-in-c.md",
+    "content/linux/automake 和 autoconf 使用教程.md",
     "content/av/assets/Pasted image 20230722223411.png",
     "content/av/assets",
     "content/linux/IO模型.md",
     "content/av",
     "content/linux/虚拟地址映射.md",
     "content/post/golang/index.md",
-    "content/about.md",
-    "content/post/vim.md",
-    "content/post/minimal-c.md",
-    "content/post/hello.md",
     "content/post/assets/Obsidian-file-setting.png",
-    "content/post/kafka-listener/index.md",
-    "content/linux/function-call-stack-in-c.md",
     "content/linux/gcc.md",
     "content/post/grpc/index.md",
     "content/linux/linux内存模型.md",

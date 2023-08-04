@@ -1,0 +1,287 @@
+参考资料：
+[freeswitch中文文档](http://www.freeswitch.org.cn/2010/04/30/freeswitch-zhong-wen-wen-dang.html)
+[freeswitch和unimrcp集成](https://github.com/wangkaisine/mrcp-plugin-with-freeswitch)
+[freeswitch mod_unimrcp官方文档](https://developer.signalwire.com/freeswitch/FreeSWITCH-Explained/Modules/mod_unimrcp_6586728/)
+[最全FreeSwitch 1.10.9 Linux通用编译部署教程](https://blog.csdn.net/qq_36369267/article/details/131564019)
+[xswitch教程](https://github.com/rts-cn/xswitch-free)
+
+freeswitch的官方[安装文档](https://developer.signalwire.com/freeswitch/FreeSWITCH-Explained/Installation/Linux/Debian_67240088)建立使用debian系统，笔者这里使用docker的`debian:bullseye`镜像。
+
+freeswitch1.10.4及之后的版本freeswitch官方将spandsp 和 sofia-sip单拎出来了，需要单独拉代码编译，如果是编译1.10.4之前的freeswitch不必单独拉spandsp和sofia-sip的代码，直接编译即可。
+
+各版本说明[freeswitch release notes](https://developer.signalwire.com/freeswitch/FreeSWITCH-Explained/Release-Notes/FreeSWITCH-1.10.x-Release-notes_25460878/#-freeswitch--freeswitch-110x-release-notes-) ，这里安装 [1.10.9](https://files.freeswitch.org/releases/freeswitch/freeswitch-1.10.9.-release.tar.gz)
+
+- https://github.com/freeswitch/sofia-sip
+  https://github.com/freeswitch/spandsp
+  https://github.com/freeswitch/mod_unimrcp
+
+- 最新的`mod_verto`模块也需要`libks`，源代码可以从以下地址获取：
+- [https://github.com/signalwire/libks](https://github.com/signalwire/libks)
+
+- 可以参考 [http://www.freeswitch.org.cn/Makefile](http://www.freeswitch.org.cn/Makefile) 以确定你的平台上应该安装哪些包。当然，该文件不是永远能保证最新的
+
+
+mod_av 对音视频模块进行了扩展
+mod_verto提供了对webRTC的支持
+
+```bash
+docker run -it debian:bullseye
+
+sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+
+apt-get update
+
+apt-get install gnupg2 wget lsb-release gcc g++ \
+	build-essential cmake automake autoconf libtool \
+	git 'libtool-bin|libtool' pkg-config \
+	libssl-dev zlib1g-dev libdb-dev unixodbc-dev \
+	libncurses5-dev libexpat1-dev libgdbm-dev bison \
+	erlang-dev libtpl-dev libtiff5-dev uuid-dev \
+	libpcre3-dev libedit-dev libsqlite3-dev \
+	libcurl4-openssl-dev nasm \
+	libogg-dev libspeex-dev libspeexdsp-dev \
+	libldns-dev python3-dev \
+	libavformat-dev libswscale-dev libavresample-dev \
+	liblua5.2-dev libopus-dev libpq-dev \
+	libsndfile1-dev libflac-dev libogg-dev libvorbis-dev \
+	libtiff-dev vim curl
+
+echo "/usr/local/lib" >> /etc/ld.so.conf
+echo "/usr/lib/x86_64-linux-gnu" >> /etc/ld.so.conf
+ldconfig
+
+cd /usr/local/src
+
+# 设置github代理
+git config --global url."https://ghproxy.com/https://github.com".insteadOf "https://github.com"
+
+
+git clone https://github.com/signalwire/libks
+
+git clone https://github.com/freeswitch/sofia-sip
+
+#tag 20230804 install 
+git clone https://github.com/freeswitch/spandsp
+cd spandsp/
+git reset --hard 67d2455efe02e7ff0d897f3fd5636fed4d54549e
+
+
+curl -o freeswitch-1.10.9.-release.tar.gz https://files.freeswitch.org/releases/freeswitch/freeswitch-1.10.9.-release.tar.gz
+mv freeswitch-1.10.9.-release freeswitch
+rm -rf freeswitch-1.10.9.-release.tar.gz
+
+# /usr/lib/libks2.so
+# /usr/lib/pkgconfig/libks2.pc
+# /usr/include/libks2
+cd libks/
+cmake .
+make
+make install
+
+#tag /usr/local/lib
+cd ../sofia-sip/
+./bootstrap.sh
+./configure
+make
+make install
+
+#tag  /usr/local/lib
+cd ../spandsp/
+./bootstrap.sh
+./configure
+make
+make install
+
+ldconfig
+
+#tag 
+cd ../freeswitch/
+
+sed -i '/mod_signalwire/s/^/#/' /usr/local/src/freeswitch/modules.conf
+sed -i '/mod_av/s/^/#/' /usr/local/src/freeswitch/modules.conf
+sed -i '/mod_verto/s/^/#/' /usr/local/src/freeswitch/modules.conf
+
+# 如果是github拉的代码有这一步，如果是下载tar包解压的没有这一步
+# ./bootstrap.sh
+./configure
+make
+make install
+
+sed -i '/mod_av/s|.*|<!-- & -->|' /usr/local/freeswitch/conf/autoload_configs/modules.conf.xml
+sed -i '/mod_verto/s|.*|<!-- & -->|' /usr/local/freeswitch/conf/autoload_configs/modules.conf.xml
+sed -i '/mod_signalwire/s|.*|<!-- & -->|' /usr/local/freeswitch/conf/autoload_configs/modules.conf.xml
+
+# 安装unimrcp相关模块
+cd /usr/local/src
+wget https://www.unimrcp.org/project/component-view/unimrcp-deps-1-6-0-tar-gz/download -O unimrcp-deps-1.6.0.tar.gz
+tar xvzf unimrcp-deps-1.6.0.tar.gz
+
+cd unimrcp-deps-1.6.0
+
+# /usr/local/apr/lib
+cd libs/apr
+./configure --prefix=/usr/local/apr
+make
+make install 
+
+echo "/usr/local/apr/lib" >> /etc/ld.so.conf
+ldconfig
+
+cd ..
+cd apr-util
+./configure --with-apr=/usr/local/src/unimrcp-deps-1.6.0/libs/apr --prefix=/usr/local/apr
+make
+make install
+ldconfig
+
+#  /usr/local/unimrcp/lib
+cd /usr/local/src
+git clone https://github.com/unispeech/unimrcp.git
+cd unimrcp
+./bootstrap
+./configure
+make
+make install
+
+#  /usr/local/freeswitch/mod
+git clone https://github.com/freeswitch/mod_unimrcp.git
+cd mod_unimrcp
+export PKG_CONFIG_PATH=/usr/local/freeswitch/lib/pkgconfig:/usr/local/unimrcp/lib/pkgconfig
+./bootstrap.sh
+./configure
+make
+make install
+cd ..
+
+```
+
+安装完毕。
+
+
+问题：
+1. 最新版本 spandsp  make编译错误
+https://github.com/signalwire/freeswitch/issues/2158
+
+
+freeswitch安装完之后：
+
+```
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/freeswitch/mod
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Leaving directory '/usr/local/src/freeswitch/src/mod/xml_int/mod_xml_scgi'
+make[4]: Leaving directory '/usr/local/src/freeswitch/src/mod/xml_int/mod_xml_scgi'
+make[3]: Leaving directory '/usr/local/src/freeswitch/src/mod'
+make[3]: Entering directory '/usr/local/src/freeswitch/src'
+make[4]: Entering directory '/usr/local/src/freeswitch/src'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/usr/local/src/freeswitch/src'
+make[3]: Leaving directory '/usr/local/src/freeswitch/src'
+make[2]: Leaving directory '/usr/local/src/freeswitch/src'
+Making install in build
+make[2]: Entering directory '/usr/local/src/freeswitch/build'
+ +---------- FreeSWITCH install Complete ----------+
+ + FreeSWITCH has been successfully installed.     +
+ +                                                 +
+ +       Install sounds:                           +
+ +       (uhd-sounds includes hd-sounds, sounds)   +
+ +       (hd-sounds includes sounds)               +
+ +       ------------------------------------      +
+ +                make cd-sounds-install           +
+ +                make cd-moh-install              +
+ +                                                 +
+ +                make uhd-sounds-install          +
+ +                make uhd-moh-install             +
+ +                                                 +
+ +                make hd-sounds-install           +
+ +                make hd-moh-install              +
+ +                                                 +
+ +                make sounds-install              +
+ +                make moh-install                 +
+ +                                                 +
+ +       Install non english sounds:               +
+ +       replace XX with language                  +
+ +       (ru : Russian)                            +
+ +       (fr : French)                             +
+ +       ------------------------------------      +
+ +                make cd-sounds-XX-install        +
+ +                make uhd-sounds-XX-install       +
+ +                make hd-sounds-XX-install        +
+ +                make sounds-XX-install           +
+ +                                                 +
+ +       Upgrade to latest:                        +
+ +       ----------------------------------        +
+ +                make current                     +
+ +                                                 +
+ +       Rebuild all:                              +
+ +       ----------------------------------        +
+ +                make sure                        +
+ +                                                 +
+ +       Install/Re-install default config:        +
+ +       ----------------------------------        +
+ +                make samples                     +
+ +                                                 +
+ +                                                 +
+ +       Additional resources:                     +
+ +       ----------------------------------        +
+ +       https://www.freeswitch.org                +
+ +       https://freeswitch.org/confluence         +
+ +       https://freeswitch.org/jira               +
+ +       http://lists.freeswitch.org               +
+ +                                                 +
+ +       irc.freenode.net / #freeswitch            +
+ +                                                 +
+ +       Register For ClueCon:                     +
+ +       ----------------------------------        +
+ +       https://www.cluecon.com                   +
+ +                                                 +
+ +-------------------------------------------------+
+```
+
+freeswitch 环境配置
+
+禁用ipv6
+
+cd sip_profiles/
+mv external-ipv6.xml external-ipv6.xml.bak
+mv internal-ipv6.xml internal-ipv6.xml.bak
+
+
+编辑/usr/local/freeswitch/conf/autoload_configs/modules.conf.xml，去掉注释符号，如果没有发现对应模块，则添加 load module="mod_unimrcp"
+
+创建unimrcp.conf.xml文件
+
+```
+
+```
+
+cd ..
+mkdir mrcp_profiles
+
+
+ERROR: Failed to set SCHED_FIFO scheduler (Operation not permitted)
+ERROR: Could not set nice level
+
+[ERR] switch_vpx.c:1832 no codecs in vp8
+[ERR] switch_vpx.c:1832 no codecs in vp9
+[ERR] switch_vpx.c:1832 no codecs in conference-vp8
+
+[ERR] mod_event_socket.c:2962 Cannot get information about IP address ::
+更改event_socket.conf.xml
+ip 设置为 0.0.0.0
