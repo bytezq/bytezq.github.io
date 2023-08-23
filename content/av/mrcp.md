@@ -2,6 +2,8 @@
 
 [MRCP协议学习笔记](http://www.ctiforum.com/news/guonei/534456.html)
 
+[rfc4463](https://datatracker.ietf.org/doc/html/rfc4463)
+
 MRCP可以称为协议上的协议。
 
 MRCP（Media Resource Control Protocol, MRCP）是一种通讯协议，中文定义是：媒体资源控制协议，用于语音服务器向客户端提供各种语音服务（如语音识别和语音合成）。该协议定义了控制媒体处理资源所必需的请求（Request）、应答（Response）和事件（Event）等消息，它需要借助 RTP（Real-Time Transport Protocol, 实时传输协议）创建一个媒体会话、借助 SIP（Session Initiation Protocol, 会话初始化协议） 和 SDP（Session Description Protocol, 会话描述协议） 创建一个控制会话来实现媒体资源服务器端和客户端之间的控制。

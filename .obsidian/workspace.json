@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9d3f130433aef828",
+            "id": "4f581e80215206e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/freeswitch/1 install.md",
-                "mode": "source",
+                "file": "content/clang-tutorial/9_array.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "5f6d181a0c3889b7",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/freeswitch/1 install.md",
+                "file": "content/clang-tutorial/9_array.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/post/freeswitch/1 install.md",
+                "file": "content/clang-tutorial/9_array.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,12 +125,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/post/freeswitch/1 install.md"
+                "file": "content/clang-tutorial/9_array.md"
               }
             }
           },
           {
-            "id": "8c842a0b5149abb6",
+            "id": "c30b11a88eab5e21",
             "type": "leaf",
             "state": {
               "type": "mermaid-toolbar-view",
@@ -139,7 +138,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -157,48 +156,49 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "9d3f130433aef828",
+  "active": "0d4c863e4453a568",
   "lastOpenFiles": [
-    "content/post/kafka/listener.md",
-    "content/post/freeswitch/1 install.md",
-    "content/post/freeswitch",
-    "content/post/freeswitch安装教程.md",
-    "content/post/kafka/log.md",
-    "content/math/梯度算法的通俗理解.md",
-    "content/math/微积分.md",
-    "content/math/概率论.md",
-    "content/math/线性代数.md",
-    "content/av/mrcp.md",
-    "content/math",
-    "content/未命名.md",
-    "content/av/rtp protocol.md",
-    "content/deep-learning/intro.md",
-    "content/about.md",
-    "content/deep-learning",
-    "content/post/minimal-c.md",
-    "content/post/hello.md",
-    "content/post/vim.md",
-    "content/linux/function-call-stack-in-c.md",
-    "content/linux/automake 和 autoconf 使用教程.md",
-    "content/av/assets/Pasted image 20230722223411.png",
-    "content/av/assets",
-    "content/linux/IO模型.md",
-    "content/av",
-    "content/linux/虚拟地址映射.md",
-    "content/post/golang/index.md",
+    "content/clang-tutorial/7_pointer.md",
+    "content/clang-tutorial/6_types.md",
+    "content/clang-tutorial/4_operator.md",
+    "content/clang-tutorial/2_syntax.md",
+    "content/clang-tutorial/1_intro.md",
+    "content/clang-tutorial/22_multibyte.md",
+    "content/clang-tutorial/21_cli.md",
+    "content/clang-tutorial/20_multifile.md",
+    "content/clang-tutorial/19_specifier.md",
+    "content/clang-tutorial/18_file.md",
+    "content/clang-tutorial/17_io.md",
+    "content/clang-tutorial/16_preprocessor.md",
+    "content/clang-tutorial/15_enum.md",
+    "content/clang-tutorial/14_union.md",
+    "content/clang-tutorial/13_typedef.md",
+    "content/clang-tutorial/12_struct.md",
+    "content/clang-tutorial/11_memory.md",
+    "content/clang-tutorial/10_string.md",
+    "content/clang-tutorial/9_array.md",
+    "content/clang-tutorial/8_function.md",
+    "content/clang-tutorial/5_flow-control.md",
+    "content/clang-tutorial/3_variable.md",
+    "content/post/freeswitch/1 安装说明.md",
+    "content/post/freeswitch/2 使用说明.md",
+    "content/post/freeswitch/3 负载均衡配置.md",
+    "content/post/freeswitch/assets/Image00009.jpg",
+    "content/post/freeswitch/assets/Pasted image 20230810150949.png",
+    "content/post/freeswitch/assets/Pasted image 20230810150751.png",
+    "content/post/freeswitch/assets/Pasted image 20230810142330.png",
     "content/post/assets/Obsidian-file-setting.png",
-    "content/linux/gcc.md",
-    "content/post/grpc/index.md",
-    "content/linux/linux内存模型.md",
-    "archetypes/default.md",
-    "content/linux/assets/Pasted image 20230708143930.png",
-    "content/linux/assets/Pasted image 20230708143904.png",
-    "content/linux/assets/Pasted image 20230708143841.png",
-    "content/linux/assets/Pasted image 20230708143736.png",
-    "content/linux/assets/Pasted image 20230708143725.png",
-    "content/linux/assets/Pasted image 20230708143207.png",
-    "content/linux/assets/stack-in-out-flowable.png",
-    "content/linux/assets/stack-frame-2.png",
-    "content/linux/momory/函数调用栈.md"
+    "content/post/freeswitch/SIP协议.md",
+    "content/linux/assets/Pasted image 20230811222155.png",
+    "content/linux/assets/Pasted image 20230811221949.png",
+    "content/linux/assets/Pasted image 20230811221742.png",
+    "content/linux/assets/Pasted image 20230811221129.png",
+    "content/linux/assets/Pasted image 20230811221057.png",
+    "content/post/freeswitch/assets",
+    "content/post/freeswitch",
+    "content/math",
+    "content/deep-learning",
+    "content/av/assets",
+    "content/av"
   ]
 }
