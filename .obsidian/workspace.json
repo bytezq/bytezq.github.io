@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/clang-tutorial/9_array.md",
-                "mode": "preview",
+                "file": "content/post/freeswitch/3 负载均衡配置.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/clang-tutorial/9_array.md",
+                "file": "content/post/freeswitch/3 负载均衡配置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/clang-tutorial/9_array.md",
+                "file": "content/post/freeswitch/3 负载均衡配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/clang-tutorial/9_array.md"
+                "file": "content/post/freeswitch/3 负载均衡配置.md"
               }
             }
           },
@@ -156,8 +156,18 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "0d4c863e4453a568",
+  "active": "4f581e80215206e3",
   "lastOpenFiles": [
+    "content/post/freeswitch/1 安装说明.md",
+    "content/post/freeswitch/2 使用说明.md",
+    "content/post/freeswitch/3 负载均衡配置.md",
+    "content/linux/minimal-c.md",
+    "content/newsite/未命名.md",
+    "content/newsite/未命名 1.md",
+    "content/未命名.md",
+    "content/newsite",
+    "content/clang-tutorial/9_array.md",
+    "未命名",
     "content/clang-tutorial/7_pointer.md",
     "content/clang-tutorial/6_types.md",
     "content/clang-tutorial/4_operator.md",
@@ -176,19 +186,11 @@
     "content/clang-tutorial/12_struct.md",
     "content/clang-tutorial/11_memory.md",
     "content/clang-tutorial/10_string.md",
-    "content/clang-tutorial/9_array.md",
-    "content/clang-tutorial/8_function.md",
-    "content/clang-tutorial/5_flow-control.md",
-    "content/clang-tutorial/3_variable.md",
-    "content/post/freeswitch/1 安装说明.md",
-    "content/post/freeswitch/2 使用说明.md",
-    "content/post/freeswitch/3 负载均衡配置.md",
     "content/post/freeswitch/assets/Image00009.jpg",
     "content/post/freeswitch/assets/Pasted image 20230810150949.png",
     "content/post/freeswitch/assets/Pasted image 20230810150751.png",
     "content/post/freeswitch/assets/Pasted image 20230810142330.png",
     "content/post/assets/Obsidian-file-setting.png",
-    "content/post/freeswitch/SIP协议.md",
     "content/linux/assets/Pasted image 20230811222155.png",
     "content/linux/assets/Pasted image 20230811221949.png",
     "content/linux/assets/Pasted image 20230811221742.png",
