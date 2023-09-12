@@ -1,40 +1,3 @@
----
-title: "gcc"
-date: 2023-06-26T09:14:49+08:00
-author: ["左丘"]
-
-categories:
-- category 1
-- category 2
-
-tags:
-- linux
-
-keywords:
-- word 1
-- word 2
-
-description: "" # 文章描述，与搜索优化相关
-summary: "" # 文章简单描述，会展示在主页
-weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
-slug: ""
-draft: false # 是否为草稿
-comments: true
-showToc: true # 显示目录
-TocOpen: true # 自动展开目录
-autonumbering: true # 目录自动编号
-hidemeta: false # 是否隐藏文章的元信息，如发布日期、作者等
-disableShare: true # 底部不显示分享栏
-searchHidden: false # 该页面可以被搜索到
-showbreadcrumbs: true #顶部显示当前路径
-mermaid: true
-cover:
-    image: ""
-    caption: ""
-    alt: ""
-    relative: false
----
-
 ### gcc简介  
 
 gcc、g++分别是gnu的c、c++编译器，gcc/g++在执行编译工作的时候，总共需要4步:
@@ -81,7 +44,7 @@ gcc、g++分别是gnu的c、c++编译器，gcc/g++在执行编译工作的时候
 -funsigned-char， -fno-signed-char， -fsigned-char， -fno-unsigned-char
 这四个参数是对char类型进行设置，决定将char类型设置成unsigned char(前两个参数)或者 signed char(后两个参数)
 
--include file 包含某个代码，简单来说，就是当某个文件需要另一个文件的时候，就可以用它设定，功能就相当于在代码中使用#include<filename>
+-include file 包含某个代码，简单来说，就是当某个文件需要另一个文件的时候，就可以用它设定，功能就相当于在代码中使用`#include<filename>`
 例如： gcc hello.c -include /root/pianopan.h
 
 -imacros file 将file文件的宏，扩展到gcc/g++的输入文件，宏定义本身并不出现在输入文件中。这个选项跟-include选项很像，但是任何通过扫描file产生的输出都被丢弃，定义的选项仍被定义，这允许你获得所有头文件的宏定义但不处理他的声明。所有该选项指定的文件将在-include选项指定的文件之前处理。
@@ -94,7 +57,7 @@ gcc、g++分别是gnu的c、c++编译器，gcc/g++在执行编译工作的时候
 
 -undef 取消对任何非标准宏的定义
 
--Idir 在你使用#include "file"的时候，gcc/g++会先在当前目录查找你所指定的头文件，如果没有找到，他会到缺省的头文件目录找，如果使用-I指定了目录，他会先在你所指定的目录查找，然后再按常规的顺序去找。对于#include <file>, gcc/g++会到-I指定的目录查找，查找不到，然后将到系统的缺省的头文件目录查找。
+-Idir 在你使用#include "file"的时候，gcc/g++会先在当前目录查找你所指定的头文件，如果没有找到，他会到缺省的头文件目录找，如果使用-I指定了目录，他会先在你所指定的目录查找，然后再按常规的顺序去找。对于`#include <file>`，gcc/g++会到-I指定的目录查找，查找不到，然后将到系统的缺省的头文件目录查找。
 
 -I- 就是取消前一个参数的功能,所以一般在-Idir之后使用
 
@@ -110,7 +73,7 @@ gcc、g++分别是gnu的c、c++编译器，gcc/g++在执行编译工作的时候
 
 -M 生成文件关联的信息。包含目标文件所依赖的所有源代码，你可以用gcc -M hello.c 来测试一下，很简单。
 
--MM 和上面的那个一样，但是它将忽略由#include<file>造成的依赖关系。
+-MM 和上面的那个一样，但是它将忽略由`#include<file>`造成的依赖关系。
 
 -MD 和-M相同，但是输出将导入到.d的文件里面
 

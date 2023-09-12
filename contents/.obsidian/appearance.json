@@ -4,7 +4,8 @@
   "interfaceFontFamily": "思源宋体",
   "textFontFamily": "思源宋体",
   "monospaceFontFamily": "DejaVu Sans Mono",
-  "baseFontSize": 16,
+  "baseFontSize": 13,
   "nativeMenus": false,
-  "translucency": false
+  "translucency": false,
+  "cssTheme": "Blue Topaz"
 }

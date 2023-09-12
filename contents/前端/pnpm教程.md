@@ -40,11 +40,8 @@ set-executionpolicy remotesigned
 |npm 命令|pnpm 等效|
 |---|---|
 |​npm install​​​|​pnpm install​​​|
-|​npm i <pkg>​​​|pnpm add <pkg>​​​|
-
-
-​npm run <cmd\>​​​ pnpm <cmd>​​​
-
+|​npm i pkg​​​|pnpm add pkg​​​|
+|npm run cmd​​| pnpm cmd​​|
 问题：
 
 1. 安装electron 执行 node install.js 报错 RequestError: read ECONNRESET

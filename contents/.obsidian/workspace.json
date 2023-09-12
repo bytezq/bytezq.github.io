@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "c9afd924eb622dda",
+        "id": "1a3f3f753e8ad219",
         "type": "tabs",
         "children": [
           {
-            "id": "ee56f96af9661072",
+            "id": "338981b2a25eabab",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "math/微积分.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "math/微积分.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "math/微积分.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "math/微积分.md"
+              }
             }
           }
         ],
@@ -133,59 +141,59 @@
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
+      "daily-notes:打开/创建今天的日记": true,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ee56f96af9661072",
+  "active": "338981b2a25eabab",
   "lastOpenFiles": [
+    "math/assets/Pasted image 20230912154126.png",
+    "math/assets",
+    "math/线性代数.md",
+    "math/微积分.md",
+    "https%3A/zh.m.wikipedia.org/wiki.md",
+    "https%3A/zh.m.wikipedia.org",
+    "https%3A",
+    "freeswitch/安装教程.md",
+    "assets/image_6kjHjXgpJ--20230904153428-ca6rcy5.png.md",
+    "assets",
+    "freeswitch/assets/fs-install-ext-sip.png",
+    "freeswitch/assets",
+    "freeswitch/调试与排错.md",
+    "linux/function-call-stack-in-c.md",
+    "linux/makefile学习笔记.md",
+    "linux/assets/stack-frame-2.png",
+    "linux/assets/makefile-img-3.png",
+    "linux/assets/makefile-img-4.png",
+    "linux/assets/makefile-img-2.png",
+    "linux/assets/makefile-img-1.png",
+    "linux/cmake学习笔记.md",
+    "linux/assets/func-call-stack-procedure.png",
+    "linux/assets/makefile-img-24.png",
+    "linux/assets/makefile-img-25.png",
+    "newsite/未命名.md",
+    "newsite/未命名 1.md",
+    "前端/pnpm教程.md",
+    "前端/Puppeteer 教程.md",
+    "linux/gcc.md",
+    "post/assets/Obsidian-file-setting.png",
+    "post/golang/index.md",
+    "post/grpc/index.md",
+    "post/kafka/log.md",
+    "post/kafka/listener.md",
+    "post/vim.md",
+    "post/hello.md",
+    "linux/minimal-c.md",
+    "linux/linux内存模型.md",
+    "linux/IO模型.md",
+    "av/mrcp.md",
+    "av/rtp protocol.md",
     "package.json",
     "package.json.3371177899",
     "pnpm-lock.yaml",
     "pnpm-lock.yaml.3347913661",
     "node_modules",
-    "docs/post/kafka/assets/docker01.png",
-    "docs/post/kafka/assets/docker01-1688273009220-3.png",
-    "docs/post/kafka/assets/aws02.png",
-    "docs/post/freeswitch/assets/Image00009.jpg",
-    "docs/post/kafka/assets/aws01-1.png",
-    "docs/前端/assets/html_width_heigth.png",
-    "docs/post/kafka/listener.md",
-    "docs/resources/_gen/assets",
-    "docs/resources/_gen/images",
-    "docs/post/kafka/log.md",
-    "docs/post/kafka/assets",
-    "docs/post/freeswitch/assets",
-    "docs/post/grpc/index.md",
-    "docs/post/freeswitch/3 负载均衡配置.md",
-    "docs/post/golang/index.md",
-    "docs/post/freeswitch/2 使用说明.md",
-    "docs/post/freeswitch/1 安装说明.md",
-    "docs/post/assets/Obsidian-file-setting.png",
-    "docs/linux/assets/x86-32-stack-frame.png",
-    "docs/linux/assets/stack-in-out-flowable.png",
-    "docs/linux/assets/Pasted image 20230811222155.png",
-    "docs/clang-tutorial/lib/wctype.h.md",
-    "docs/clang-tutorial/lib/wchar.h.md",
-    "docs/clang-tutorial/lib/time.h.md",
-    "docs/clang-tutorial/lib/string.h.md",
-    "docs/clang-tutorial/lib/stdlib.h.md",
-    "docs/clang-tutorial/lib/stdio.h.md",
-    "docs/clang-tutorial/lib/stdint.h.md",
-    "docs/clang-tutorial/lib/stdbool.h.md",
-    "docs/clang-tutorial/lib/stddef.h.md",
-    "docs/clang-tutorial/lib/stdarg.h.md",
-    "docs/clang-tutorial/lib/signal.h.md",
-    "docs/clang-tutorial/lib/locale.h.md",
-    "docs/clang-tutorial/lib/math.h.md",
-    "docs/clang-tutorial/lib/limits.h.md",
-    "docs/clang-tutorial/lib/iso646.h.md",
-    "docs/clang-tutorial/lib/inttypes.h.md",
-    "docs/clang-tutorial/lib/float.h.md",
-    "docs/clang-tutorial/lib/assert.h.md",
-    "docs/resources/_gen",
-    "docs/前端/assets",
     "未命名.canvas"
   ]
 }

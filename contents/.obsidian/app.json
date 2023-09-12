@@ -5,7 +5,7 @@
   "attachmentFolderPath": "./assets",
   "vimMode": false,
   "alwaysUpdateLinks": true,
-  "promptDelete": true,
+  "promptDelete": false,
   "strictLineBreaks": true,
-  "showLineNumber": false
+  "showLineNumber": true
 }

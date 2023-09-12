@@ -30,7 +30,7 @@ test:
 	echo "test game"
 ```
 运行结果：
-![](assets/Pasted%20image%2020230811211339.png)
+![](assets/makefile-img-1.png)
 
 上面Makefile 中的 all 就是我们的⽬标，放在 `:` 的前⾯，其名字可以是由字⺟和下划线组成 。echo “Hello World”就是⽣成⽬标的命令，这些命令可以是任何你可以在你的环境中运⾏的命令以及 make 所定义的函数等等。all ⽬标的定义，其实是定义了如何⽣成 all ⽬标，这我们也称之为规则。
 
@@ -42,7 +42,7 @@ test:
 	@echo "test game"
 ```
 运行结果：
-![](assets/Pasted%20image%2020230811211644.png)
+![](assets/makefile-img-2.png)
 
 紧接着对makefile进行如下的改动，在all的后面加上test
 ```makefile
@@ -52,7 +52,7 @@ test:
 	@echo "test game"
 ```
 运行结果：
-![](assets/Pasted%20image%2020230811211757.png)
+![](assets/makefile-img-3.png)
 
 ### 一个复杂的例子
 ```C
@@ -85,7 +85,7 @@ clean:
 	rm simple main.o foo.o
 ```
 运行结果
-![](assets/Pasted%20image%2020230811212350.png)
+![](assets/makefile-img-4.png)
 第⼆次编译并没有构建⽬标⽂件的动作，但为什么有构建simple可执⾏程序的动作呢？
 
 make 在检查⼀个规则时，采⽤的⽅法是：如果先决条件中相关的⽂件的时间戳⼤于⽬标的时间戳，即先决条件中的⽂件⽐⽬标更新，则知道有变化，那么需要运⾏规则中的命令重新构建⽬标。
@@ -95,11 +95,11 @@ make 在检查⼀个规则时，采⽤的⽅法是：如果先决条件中相关
 第二次构建的目标是all，而all在我们编译的过成中并不生成，所以第二次make的时候找不到，所以又重新编译了一遍。
 
 一个文件是否改变不是看这个文件的大小是否改变，而是看这个文件的时间戳是否发生了变化。可以直接使用touch指令对文件的时间戳进行修改。
-![](assets/Pasted%20image%2020230811212907.png)
+![](assets/makefile-img-5.png)
 
 
 ### 假目标
-![](assets/Pasted%20image%2020230811213020.png)
+![](assets/makefile-img-6.png)
 如上图，如果我们的创建了一个clean文件之后，继续去运行make clean，这时候不是按照我们前面运行的make clean进行清理文件。
 
 为什么出现上面的原因？因为这个时候make 将clean单程是一个文件，并且在当前的目录下找到了这个文件，再加上clean目标没有任何的先决条件，这时候进行make clean时，系统会认为clean是最新的。
@@ -118,7 +118,7 @@ clean:
 	rm simple main.o foo.o
 ```
 运行结果：
-![](assets/Pasted%20image%2020230811213143.png)
+![](assets/makefile-img-7.png)
 
 #### 变量
 ```
@@ -137,7 +137,7 @@ clean:
 	$(RM) $(EXE) $(OBJS)
 ```
 
-![](assets/Pasted%20image%2020230811213232.png)
+![](assets/makefile-img-8.png)
 
 变量的使用可以提高makefile的可维护性。⼀个变量的定义很简单，就是⼀个名字（变量名）后⾯跟上⼀个等号，然后在等号的后⾯放这个变量所期望的值。对于变量的引⽤，则需要采⽤$(变量名)或者${变量名}这种模式。在这个 Makefile 中，我们引⼊了 CC 和 RM 两个变量，⼀个⽤于保存编译器名，⽽另⼀个⽤于指示删除⽂件的命令是什么。还有就是引⼊了 EXE 和 OBJS 两个变量，⼀个⽤于存放可执⾏⽂件名，可另⼀个则⽤于放置所有的⽬标⽂件名。采⽤变量的话，当我们需要更改编译器时，只需更改变量赋值的地⽅，⾮常⽅便，如果不采⽤变量，那我们得更改每⼀个使⽤编译器的地⽅，很是麻烦。
 
@@ -158,7 +158,7 @@ all:first second third
 first second third:
 ```
 
-![](assets/Pasted%20image%2020230811213718.png)
+![](assets/makefile-img-9.png)
 
 需要注意的是，在 Makefile 中`$`具有特殊的意思，因此，如果想采⽤ echo 输出`$`，则必需⽤两个连着的`$$`。还有就是，`$@`对于 Shell 也有特殊的意思，我们需要在 `$$@` 之前再加⼀个解释字符 `\`。
 
@@ -179,7 +179,7 @@ clean:
 	$(RM) $(EXE) $(OBJS)
 ```
 运行结果
-![](assets/Pasted%20image%2020230811214120.png)
+![](assets/makefile-img-10.png)
 
 
 
@@ -194,7 +194,7 @@ all:
 	@echo "MAKE = $(MAKE)"
 ```
 
-![](assets/Pasted%20image%2020230811214258.png)
+![](assets/makefile-img-11.png)
 
 ###### MAKECMDGOALS变量
 表示的是当前⽤户所输⼊的 make ⽬标是什么。
@@ -205,7 +205,7 @@ all clean:
 	@echo "MAKECMDGOALS = $(MAKECMDGOALS)"
 ```
 
-运行结果：![](assets/Pasted%20image%2020230811214407.png)
+运行结果：![](assets/makefile-img-12.png)
 
 从测试结果看来，MAKECMDGOALS 指的是⽤户输⼊的⽬标，当我们只运⾏ make 命令时，虽然根据
 Makefile 的语法，第⼀个⽬标将成为缺省⽬标，即 all ⽬标，但 MAKECMDGOALS 仍然是空，⽽不是
@@ -223,7 +223,7 @@ all:
 	@echo $(foo)
 ```
 
-![](assets/Pasted%20image%2020230811214455.png)
+![](assets/makefile-img-13.png)
 
 除了递归扩展变量还有⼀种变量称之为简单扩展变量（simply expanded variables），是⽤“:=”操作符
 来定义的。对于这种变量，make 只对其进⾏⼀次扫描和替换。
@@ -240,7 +240,7 @@ all:
 	@echo "x = $(y), xx = $(yy)"
 ```
 
-![](assets/Pasted%20image%2020230811214515.png)
+![](assets/makefile-img-14.png)
 
 另外还有一种条件赋值符“？=”，条件赋值的意思是当变量以前没有定义时，就定义它并且将左边的值赋值给它，如果已经定义了那么就不再改变其值。条件赋值类似于提供了给变量赋缺省值的功能。
 
@@ -253,7 +253,7 @@ all:
 	@echo "foo = $(foo), bar = $(bar)"
 ```
 
-![](assets/Pasted%20image%2020230811214539.png)
+![](assets/makefile-img-15.png)
 
 此外，还有"+="操作符，对变量进⾏赋值的⽅法
 
@@ -265,7 +265,7 @@ all:
 	@echo $(objects)
 ```
 
-![](assets/Pasted%20image%2020230811214617.png)
+![](assets/makefile-img-16.png)
 
 ###### override指令
 
@@ -278,7 +278,7 @@ all:
 ```
 
 运行结果：
-![](assets/Pasted%20image%2020230811214728.png)
+![](assets/makefile-img-17.png)
 
 ##### 模式
 如果对于每⼀个⽬标⽂件都得写⼀个不同的规则来描述，那会是⼀种“体⼒活”，太繁了！对于⼀个⼤型项⽬，就更不⽤说了。Makefile 中的模式就是⽤来解决我们的这种烦恼的。
@@ -298,7 +298,7 @@ clean:
 ```
 
 与 simple 项⽬前⼀版本的 Makefile 相⽐，最为直观的改变就是从⼆条构建⽬标⽂件的规则变成了⼀条。
-模式类似于我们在 Windows 操作系统中所使⽤的通配符，当然是⽤“%”⽽不是“*”。采⽤了模式以后，
+模式类似于我们在 Windows 操作系统中所使⽤的通配符，当然是⽤`%`⽽不是`*`。采⽤了模式以后，
 不论有多少个源⽂件要编译，我们都是应⽤同⼀个模式规则的，很显然，这⼤⼤的简化了我们的⼯作。使
 ⽤了模式规则以后，你同样可以⽤这个 Makefile 来编译或是清除 simple 项⽬，这与前⼀版本在功能上是
 完全⼀样的。
@@ -331,7 +331,7 @@ clean:
 何更改的情况下其是否仍能正常的⼯作。增加⽂件的⽅式仍然是采⽤ touch 命令，通过 touch 命令  
 ⽣成⼀个内容是空的 bar.c 源⽂件，然后再运⾏ make 和 make clean。
 
-![](assets/Pasted%20image%2020230811220231.png)
+![](assets/makefile-img-18.png)
 
 ###### addprefix函数
 
@@ -345,7 +345,7 @@ all:
 	@echo $(with_dir)
 ```
 
-![](assets/Pasted%20image%2020230811220328.png)
+![](assets/makefile-img-19.png)
 
 ###### filter函数
 
@@ -359,7 +359,7 @@ all:
 	@echo $(sources)
 ```
 
-![](assets/Pasted%20image%2020230811220431.png)
+![](assets/makefile-img-20.png)
 
 从结果来看，经过 filter 函数的调⽤以后，source变量中只存在.c ⽂件和.s ⽂件了，⽽.h ⽂件则则被过滤掉了。
 
@@ -374,7 +374,7 @@ all:
 	@echo $(result)
 ```
 
-![](assets/Pasted%20image%2020230811221057.png)
+![](assets/makefile-img-21.png)
 
 ###### patsubst函数
 patsubst 函数是⽤来进⾏字符串替换的，其形式是：$(patsubst pattern, replacement, text)
@@ -386,14 +386,13 @@ all:
 	@echo $(objects)
 ```
 
-![](assets/Pasted%20image%2020230811221129.png)
+![](assets/makefile-img-22.png)
 
 上述代码中 mixed 变量中包括了.c ⽂件也包括了.o ⽂件，采⽤patsubst 函数进⾏字符串替换时，我们希望将所有的.c ⽂件都替换成.o ⽂件。上图是最后的运⾏结果。
 
 ###### strip
 strip 函数⽤于去除变量中的多余的空格，其形式是：$(strip string)
-wildcard 是通配符函数，通过它可以得到我们所需的⽂件，这个函数类似我们在 Windows 或Linux 命
-令⾏中的“*”。其形式是：$(wildcard pattern)
+wildcard 是通配符函数，通过它可以得到我们所需的⽂件，这个函数类似我们在 Windows 或Linux 命令⾏中的 `*` 。其形式是：`$(wildcard pattern)`
 
 ### 3 makefile进阶
 #### 3.1 创建目录
@@ -413,10 +412,10 @@ clean:
 	$(RM) $(RMFLAGS) $(DIRS)
 ```
 
-![](assets/Pasted%20image%2020230811221742.png)
+![](assets/makefile-img-23.png)
 
 #### 3.2 增加头文件
-```makefile
+```less
 .PHONY:all clean
 MKDIR=mkdir
 RM=rm
@@ -437,10 +436,10 @@ clean:
 	$(RM) $(RMFLAGS) $(DIRS) $(EXE) $(OBJS)
 ```
 
-![](assets/Pasted%20image%2020230811221949.png)
+![](assets/makefile-img-24.png)
 
 #### 3.3 将文件放入目录
-```
+```less
 .PHONY:all clean
 MKDIR=mkdir
 RM=rm
@@ -468,5 +467,4 @@ clean:
 	$(RM) $(RMFLAGS) $(DIRS)
 ```
 
-![](assets/Pasted%20image%2020230811222155.png)
-
+![](assets/makefile-img-25.png)
