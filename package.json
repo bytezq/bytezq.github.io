@@ -1,18 +1,22 @@
 {
-  "name": "blog",
+  "name": "zqblog",
   
   "version": "1.0.0",
   "packageManager": "pnpm@8.7.1",
 
-  "devDependencies": {
-    "vitepress": "1.0.0-rc.12"
-  },
-
+  "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev contents",
     "docs:build": "vitepress build contents",
     "docs:preview": "vitepress preview contents"
   },
+
+  "devDependencies": {
+    "vitepress": "1.0.0-rc.12",
+    "vue": "^3.3.4"
+  },
+
+
   
   "dependencies": {
     "vue": "^3.3.4"
