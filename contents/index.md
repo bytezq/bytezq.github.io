@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "左丘的博客"
-  text: "记录学习计算机编程的笔记。"
+  name: "编程空间"
+  text: ""
   tagline: My great project tagline
   actions:
     - theme: brand

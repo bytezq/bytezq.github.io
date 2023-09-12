@@ -2,12 +2,15 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "左丘的博客",
+  
+  lang: 'zh-CN',
+  title: "左丘的编程空间",
   description: "记录学习计算机编程的笔记。",
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
+      { text: '主页', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
 
