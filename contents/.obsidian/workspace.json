@@ -4,22 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "1a3f3f753e8ad219",
+        "id": "d6ebe33404779539",
         "type": "tabs",
         "children": [
           {
-            "id": "338981b2a25eabab",
+            "id": "de0441c2666484f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "math/微积分.md",
+                "file": "前端/Electron教程.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0b9da4cff6040223",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "freeswitch/调试与排错.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "79f9841e6175468f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "freeswitch/调试与排错.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "math/微积分.md",
+                "file": "freeswitch/调试与排错.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "math/微积分.md",
+                "file": "freeswitch/调试与排错.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "math/微积分.md"
+                "file": "freeswitch/调试与排错.md"
               }
             }
           }
@@ -134,7 +159,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,8 +172,20 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "338981b2a25eabab",
+  "active": "79f9841e6175468f",
   "lastOpenFiles": [
+    "freeswitch/安装教程.md",
+    "前端/乱七八糟.md",
+    "前端/Electron教程.md",
+    "前端/Javascript Info.md",
+    "前端/javascript事件监控.md",
+    "前端/pnpm教程.md",
+    "前端/Puppeteer 教程.md",
+    "前端/vitepress搭建blog教程.md",
+    "freeswitch/调试与排错.md",
+    "post/freeswitch/3 负载均衡配置.md",
+    "index.md",
+    "markdown-examples.md",
     "math/assets/Pasted image 20230912154126.png",
     "math/assets",
     "math/线性代数.md",
@@ -155,12 +193,10 @@
     "https%3A/zh.m.wikipedia.org/wiki.md",
     "https%3A/zh.m.wikipedia.org",
     "https%3A",
-    "freeswitch/安装教程.md",
     "assets/image_6kjHjXgpJ--20230904153428-ca6rcy5.png.md",
     "assets",
     "freeswitch/assets/fs-install-ext-sip.png",
     "freeswitch/assets",
-    "freeswitch/调试与排错.md",
     "linux/function-call-stack-in-c.md",
     "linux/makefile学习笔记.md",
     "linux/assets/stack-frame-2.png",
@@ -174,21 +210,11 @@
     "linux/assets/makefile-img-25.png",
     "newsite/未命名.md",
     "newsite/未命名 1.md",
-    "前端/pnpm教程.md",
-    "前端/Puppeteer 教程.md",
     "linux/gcc.md",
-    "post/assets/Obsidian-file-setting.png",
     "post/golang/index.md",
     "post/grpc/index.md",
     "post/kafka/log.md",
     "post/kafka/listener.md",
-    "post/vim.md",
-    "post/hello.md",
-    "linux/minimal-c.md",
-    "linux/linux内存模型.md",
-    "linux/IO模型.md",
-    "av/mrcp.md",
-    "av/rtp protocol.md",
     "package.json",
     "package.json.3371177899",
     "pnpm-lock.yaml",

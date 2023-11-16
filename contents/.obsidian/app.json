@@ -7,5 +7,5 @@
   "alwaysUpdateLinks": true,
   "promptDelete": false,
   "strictLineBreaks": true,
-  "showLineNumber": true
+  "showLineNumber": false
 }
