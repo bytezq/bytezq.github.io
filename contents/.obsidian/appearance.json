@@ -1,11 +1,11 @@
 {
   "accentColor": "",
   "theme": "moonstone",
-  "interfaceFontFamily": "思源宋体",
-  "textFontFamily": "思源宋体",
+  "interfaceFontFamily": "微软雅黑",
+  "textFontFamily": "微软雅黑,思源宋体,宋体",
   "monospaceFontFamily": "DejaVu Sans Mono",
-  "baseFontSize": 16,
+  "baseFontSize": 17,
   "nativeMenus": false,
   "translucency": false,
-  "cssTheme": "Blue Topaz"
+  "cssTheme": ""
 }

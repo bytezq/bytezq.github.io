@@ -11,7 +11,7 @@ https://yuzhigang5460.gitbook.io/electron/
 
 
 contextBridge 
-英文命名准确，易理解。主进程context和渲染进程context是相互隔离的，通过contextBridge将主进程上下文的接口暴露给渲染进程。
+主进程context和渲染进程context是相互隔离的，通过contextBridge将主进程上下文的接口暴露给渲染进程。
 
 Inter-process communication (IPC) 
 

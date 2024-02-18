@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "d6ebe33404779539",
+        "id": "323bdc814884a284",
         "type": "tabs",
         "children": [
           {
-            "id": "de0441c2666484f0",
+            "id": "00360ede11cdc589",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端/Electron教程.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0b9da4cff6040223",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "freeswitch/调试与排错.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "79f9841e6175468f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "freeswitch/调试与排错.md",
+                "file": "linux/function-call-stack-in-c.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "RTP",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "freeswitch/调试与排错.md",
+                "file": "linux/function-call-stack-in-c.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "freeswitch/调试与排错.md",
+                "file": "linux/function-call-stack-in-c.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "freeswitch/调试与排错.md"
+                "file": "linux/function-call-stack-in-c.md"
               }
             }
           }
@@ -159,8 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,57 +143,58 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": true,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false
     }
   },
-  "active": "79f9841e6175468f",
+  "active": "00360ede11cdc589",
   "lastOpenFiles": [
-    "freeswitch/安装教程.md",
-    "前端/乱七八糟.md",
-    "前端/Electron教程.md",
-    "前端/Javascript Info.md",
-    "前端/javascript事件监控.md",
-    "前端/pnpm教程.md",
-    "前端/Puppeteer 教程.md",
-    "前端/vitepress搭建blog教程.md",
-    "freeswitch/调试与排错.md",
-    "post/freeswitch/3 负载均衡配置.md",
-    "index.md",
-    "markdown-examples.md",
-    "math/assets/Pasted image 20230912154126.png",
-    "math/assets",
+    "linux/IO模型.md",
+    "linux/linux内存模型.md",
+    "linux/minimal-c.md",
     "math/线性代数.md",
     "math/微积分.md",
-    "https%3A/zh.m.wikipedia.org/wiki.md",
+    "math/梯度算法的通俗理解.md",
+    "math/概率论.md",
+    "内存管理子系统.md",
+    "linux/进程和线程.md",
+    "linux/虚拟地址映射.md",
+    "linux/function-call-stack-in-c.md",
+    "音视频技术栈/mrcpv2语音控制协议.md",
+    "音视频技术栈/rtp实时传输协议.md",
+    "音视频技术栈/（存储）图像中的位深.md",
+    "音视频技术栈/（存储）常见图像格式总结.md",
+    "音视频技术栈/（编解码）H264编码.md",
+    "音视频技术栈/WebRTC/webrtc配置.md",
+    "音视频技术栈/WebRTC/WebRTC.md",
+    "音视频技术栈/srs/golang语言学习笔记.md",
+    "音视频技术栈/srs/electron-vite开发.md",
+    "音视频技术栈/srs/信令.md",
+    "音视频技术栈/freeswitch/调试与排错.md",
+    "音视频技术栈/freeswitch/安装教程.md",
+    "音视频技术栈/会议信令.md",
+    "post/golang/index.md",
+    "post/freeswitch/1 安装说明.md",
+    "post/freeswitch/assets/Image00009.jpg",
+    "音视频技术栈/assets/sip_invite.png",
+    "未命名",
+    "音视频技术栈/WebRTC",
+    "音视频技术栈/未命名",
+    "音视频技术栈/assets/Pasted image 20231215102059.png",
+    "音视频技术栈/assets/Pasted image 20231215095452.png",
+    "音视频技术栈/assets/Pasted image 20231215095438.png",
+    "音视频技术栈/assets",
+    "音视频技术栈/srs/assets/cut_27_41426_m.jpg",
+    "音视频技术栈/srs/assets/cut_25_33819_m.jpg",
+    "音视频技术栈/srs/assets/cut_24_9125_m.jpg",
+    "音视频技术栈/srs/assets",
+    "音视频技术栈",
+    "音视频技术栈/srs",
+    "math/assets/Pasted image 20230912154126.png",
+    "math/assets",
     "https%3A/zh.m.wikipedia.org",
     "https%3A",
-    "assets/image_6kjHjXgpJ--20230904153428-ca6rcy5.png.md",
-    "assets",
-    "freeswitch/assets/fs-install-ext-sip.png",
-    "freeswitch/assets",
-    "linux/function-call-stack-in-c.md",
-    "linux/makefile学习笔记.md",
-    "linux/assets/stack-frame-2.png",
-    "linux/assets/makefile-img-3.png",
-    "linux/assets/makefile-img-4.png",
-    "linux/assets/makefile-img-2.png",
-    "linux/assets/makefile-img-1.png",
-    "linux/cmake学习笔记.md",
-    "linux/assets/func-call-stack-procedure.png",
-    "linux/assets/makefile-img-24.png",
-    "linux/assets/makefile-img-25.png",
-    "newsite/未命名.md",
-    "newsite/未命名 1.md",
-    "linux/gcc.md",
-    "post/golang/index.md",
-    "post/grpc/index.md",
-    "post/kafka/log.md",
-    "post/kafka/listener.md",
-    "package.json",
-    "package.json.3371177899",
-    "pnpm-lock.yaml",
-    "pnpm-lock.yaml.3347913661",
-    "node_modules",
+    "音视频技术栈/freeswitch/assets/fs-install-ext-sip.png",
     "未命名.canvas"
   ]
 }
