@@ -2,15 +2,12 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  
-  lang: 'zh-CN',
-  title: "左丘的编程空间",
-  description: "记录学习计算机编程的笔记。",
-
+  title: "左丘的博客",
+  description: "All good things must come to an end",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '主页', link: '/' },
+      { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
 
