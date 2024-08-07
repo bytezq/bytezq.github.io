@@ -7,8 +7,14 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '首页', link: '/' },
+      {
+        text: '大数据',
+        items: [
+          { text: 'flink', link: '/bigdata/flink.md' },
+          { text: 'flink部署', link: '/bigdata/flink-deploy.md' },
+        ]
+      },
     ],
 
     sidebar: [
@@ -16,7 +22,7 @@ export default defineConfig({
         text: 'Examples',
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'flink', link: '/flink' }
         ]
       }
     ],

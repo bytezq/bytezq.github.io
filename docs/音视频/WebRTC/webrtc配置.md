@@ -78,8 +78,8 @@ services:
 
 ```
 
-![](../srs/assets/cut_24_9125_m.jpg)
+![](cut_24_9125_m.jpg)
 如音频除了可以支持Opus、AAC外，还可以支持G.711/G.722、iLBC、Speex等，视频除了可以支持H264外，还可以支持H265、VP8、VP9、AVI等，这样它才能应用得更广泛。
 
-![](../srs/assets/cut_25_33819_m.jpg)
-![](../srs/assets/cut_27_41426_m.jpg)
+![](cut_25_33819_m.jpg)
+![](cut_27_41426_m.jpg)
