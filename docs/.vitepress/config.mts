@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "左丘的博客",
-  description: "All good things must come to an end",
+  description: "All good things must come to an end.",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

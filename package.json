@@ -1,11 +1,15 @@
 {
-  "type": "module",
-  "devDependencies": {
-    "vitepress": "^1.3.2"
+  "name": "bytezq.github.io",
+  "version": "1.0.0",
+  "directories": {
+    "doc": "docs"
   },
   "scripts": {
-    "docs:dev": "vitepress dev contents",
-    "docs:build": "vitepress build contents",
-    "docs:preview": "vitepress preview contents"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.3.2"
   }
 }

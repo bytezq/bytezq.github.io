@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "zqblog"
-  text: "A VitePress Site"
+  name: "左丘的博客"
+  text: "All good things must come to an end."
   tagline: My great project tagline
   actions:
     - theme: brand
